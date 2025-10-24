@@ -11,6 +11,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -175,7 +176,7 @@ b {
 }
 
 .bg-no {
-  background-color: rgb(rgb(255, 255, 255), green, blue, 0);
+  background-color: transparent;
   color: grey;
   border: 1px solid grey;
   padding: 5px;
@@ -272,13 +273,130 @@ main hr {
   }
   .container-curios {
     font-size: 30px;
-  }
-  .curios {
-    margin-top: 0;
-    padding-top: 30px;
+    justify-content: flex-end;
+    padding-left: 150px;
   }
 
+  .curios {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-articolo {
+    padding: 0;
+    margin: 0 0;
+    width: 25%;
+
+    box-sizing: border-box;
+  }
+  .all-article {
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
   .article {
     flex: 0 0 calc(33.333% - 13.33px); /* 3 per riga con gap */
+    max-width: 100%;
+  }
+  .trend {
+    margin-top: 5%;
+    margin-left: 8%;
+  }
+
+  main hr {
+    border: 0.5px solid grey;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin: 5%;
+  }
+
+  .topics-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .container-discover {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex: 1;
+  }
+
+  #h2-discover {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .data-articolo {
+    display: flex;
+  }
+
+  .data-articolo button {
+    background-color: rgb(217, 217, 217);
+    color: #191919;
+    border-radius: 25px;
+    border: 0;
+  }
+
+  .data-articolo a {
+    text-decoration: none;
+    color: #191919;
+  }
+
+  .container-div {
+    display: flex;
+    gap: 2rem;
+    max-width: 800px;
+    flex: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  .destra {
+    width: 100%;
+    max-width: 300px; /* o più, se lo spazio lo consente */
+    height: auto;
+    overflow: hidden;
+  }
+
+  .destra img {
+    width: 100%;
+
+    display: block;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .cont-article p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+
+    color: #333;
+  }
+  .cont-article p b {
+    font-size: 1.2rem;
+    color: #000;
+  }
+
+  .bookmark-divisor {
+    display: flex;
+    justify-content: space-between;
   }
 }
