@@ -1,0 +1,284 @@
+/* @media screen and (min-width: 320px) { */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+header {
+  background-color: #ffc017;
+  box-sizing: border-box;
+}
+header svg {
+  display: none;
+}
+.navbar {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  align-items: baseline;
+  position: relative;
+  z-index: 1;
+}
+/* .navbar img {
+    width: 30%;
+  } */
+
+.get-started a {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 5px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+}
+
+ul li a {
+  color: #191919;
+  padding: 2vh;
+  text-decoration: none;
+}
+
+/* ul li a:hover {
+    background-color: #111111;
+  } */
+
+.none {
+  display: none;
+}
+hr {
+  margin: 0;
+  border: 0.5px solid #191919;
+}
+
+.curios {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 1rem;
+  gap: 10px;
+  max-width: 100%;
+}
+.curios h1 {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-size: 3em;
+}
+.curios h2 {
+  white-space: normal;
+}
+.curios button {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 30px;
+}
+.curios button a {
+  text-decoration: none;
+  color: white;
+}
+/* MAIN */
+.container-articolo {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  padding: 5%;
+  gap: 10px;
+}
+
+.trend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 500;
+  gap: 5px;
+}
+
+.trend img {
+  width: 20px;
+}
+
+.article {
+  display: flex;
+  gap: 20px;
+}
+
+.article h1 {
+  font-size: 25px;
+  color: #e6e7e7;
+  font-weight: bold;
+}
+
+.cont-propic {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cont-propic h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cont-propic img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 20px;
+}
+b {
+  font-weight: bold;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+.cont-article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.light-text {
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.all-article {
+  display: flex;
+  flex-direction: column;
+}
+/* DISCOVER MORE */
+
+.container-discover {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bg-no {
+  background-color: rgb(rgb(255, 255, 255), green, blue, 0);
+  color: grey;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+#h2-discover {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+main hr {
+  border: 0.5px solid grey;
+  width: 90%;
+  margin: 0 auto;
+}
+/* } */
+/* TABLET */
+@media screen and (min-width: 481px) {
+  .none {
+    display: block;
+  }
+  .navbar {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .get-started a {
+    display: inline-block;
+  }
+
+  ul {
+    gap: 2px;
+  }
+
+  header svg {
+    display: block;
+  }
+  .container-curios {
+    display: flex;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .container-curios svg {
+    flex: 1;
+  }
+  .curios {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 0;
+    flex: 2;
+  }
+
+  .container-articolo {
+    padding: 10px;
+    width: 40%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .all-article {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article {
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 10px);
+    max-width: 300px;
+  }
+
+  .trend {
+    margin-left: 25px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1025px) {
+  .none {
+    display: block;
+  }
+  .navbar {
+    font-size: 16px;
+    padding: 20px 150px;
+  }
+  header svg {
+    display: block;
+  }
+  .container-curios {
+    font-size: 30px;
+  }
+  .curios {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+
+  .article {
+    flex: 0 0 calc(33.333% - 13.33px); /* 3 per riga con gap */
+  }
+}
